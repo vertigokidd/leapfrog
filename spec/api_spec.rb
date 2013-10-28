@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'fakeweb'
 
 describe Frogger do
 
@@ -31,9 +32,18 @@ describe Frogger do
   end
 
   describe "#create_request" do
-    it "creates a url string with income, zip_code and age" do
+    it "creates a url string with income, zip_code and age as params" do
       @frogger.create_request.should eq("http://internal.leapfrogonline.com/customer_scoring?income=50000&zipcode=60201&age=35")
     end
+  end
+
+  describe "#fetch" do
+    it "makes an http get request "
+
+
+    # it "returns a json response"
+      
+    # end
   end
   
 end
