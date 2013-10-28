@@ -6,6 +6,8 @@ json_string = hash.to_json
 
 class Frogger
 
+  attr_reader :income, :zip_code, :age
+
   def initialize(income, zip_code, age)
     @income = income
     @zip_code = zip_code
