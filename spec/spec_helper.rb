@@ -1,1 +1,1 @@
-require_relative '../leapfrogger.rb'
+require_relative '../lib/leapfrogger.rb'
