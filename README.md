@@ -15,4 +15,5 @@ Tests are written using Rspec. To run them, use the command `rspec spec` from th
 ```ruby
 require 'leapfrogger'
 frog = Leapfrogger.new(50000, 60602, 35)  # => Instantiates a leapfrogger object
-frog.fetch   # => Makes a call to the API, returns either an error or the JSON object```
+frog.fetch   # => Makes a call to the API, returns either an error or the JSON object
+```
