@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name        = 'leapfrogger_vertigokidd'
+  s.name        = 'leapfrogger'
   s.version     = '0.0.0'
   s.date        = '2013-10-28'
   s.summary     = "Leapfrog Online"
