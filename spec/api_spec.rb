@@ -29,5 +29,11 @@ describe Frogger do
       @frogger.age.should eql(35)
     end
   end
+
+  describe "#create_request" do
+    it "creates a url string with income, zip_code and age" do
+      @frogger.create_request.should eq("http://internal.leapfrogonline.com/customer_scoring?income=50000&zipcode=60201&age=35")
+    end
+  end
   
 end

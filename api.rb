@@ -14,4 +14,8 @@ class Frogger
     @age = age
   end
 
+  def create_request
+    "http://internal.leapfrogonline.com/customer_scoring?income=#{@income}&zipcode=#{@zip_code}&age=#{@age}"
+  end
+
 end
