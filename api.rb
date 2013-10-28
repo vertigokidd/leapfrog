@@ -18,4 +18,8 @@ class Frogger
     "http://internal.leapfrogonline.com/customer_scoring?income=#{@income}&zipcode=#{@zip_code}&age=#{@age}"
   end
 
+  def fetch
+    
+  end
+
 end

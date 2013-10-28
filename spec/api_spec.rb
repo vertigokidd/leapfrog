@@ -38,7 +38,14 @@ describe Frogger do
   end
 
   describe "#fetch" do
-    it "makes an http get request "
+
+    before :each do 
+      FakeWeb.register_uri(:get, "http://internal.leapfrogonline.com/customer_scoring?income=50000&zipcode=60201&age=35", :body => "{ 'propensity': 0.26532, 'ranking': 'C' }")
+    end
+
+    it "makes an http get request to correct url" do
+      @frogger.fetch.should include("propensity")
+    end
 
 
     # it "returns a json response"
