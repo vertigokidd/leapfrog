@@ -1,4 +1,5 @@
 require 'json'
+require 'net/http'
 
 hash = { "propensity" => 0.26532, "ranking" => "C" } 
 json_string = hash.to_json
@@ -19,7 +20,7 @@ class Frogger
   end
 
   def fetch
-    
+    Net::HTTP.get(URI(create_request))
   end
 
 end
