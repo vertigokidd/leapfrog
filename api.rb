@@ -16,7 +16,12 @@ class Frogger
   end
 
   def fetch
-    Net::HTTP.get(URI(create_request))
+    response = Net::HTTP.get_response(URI(create_request))
+    if response.code == "200"
+      response.body
+    else
+      "There was an error"
+    end
   end
 
 end

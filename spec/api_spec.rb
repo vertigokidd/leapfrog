@@ -45,16 +45,13 @@ describe Frogger do
       @frogger.fetch.should include("propensity")
     end
 
-    it "returns an error if response is not 200" do
+    it "returns an error if response is not OK" do
       FakeWeb.register_uri(:get, "http://internal.leapfrogonline.com/customer_scoring?income=50000&zipcode=60201&age=35", 
                            :body => "{ 'propensity': 0.26532, 'ranking': 'C' }",
                            :status => ["404", "Not Found"])
       @frogger.fetch.should include("error")
     end
-
-    # it "returns a json response"
-      
-    # end
+    
   end
   
 end
