@@ -1,7 +1,7 @@
 require 'json'
 require 'net/http'
 
-class Frogger
+class Leapfrogger
 
   attr_reader :income, :zip_code, :age
 
