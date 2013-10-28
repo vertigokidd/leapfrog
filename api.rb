@@ -25,12 +25,3 @@ class Frogger
   end
 
 end
-
-
-##### More Tests #####
-
-# hash = { "propensity" => 0.26532, "ranking" => "C" } 
-# json_string = hash.to_json
-
-# frog = Frogger.new(50000, 60201, 35)
-# p frog.fetch
